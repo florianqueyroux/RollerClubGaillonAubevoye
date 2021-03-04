@@ -1,0 +1,5 @@
+{
+  "route.call": {
+    "listener": "App\\Listener\\AppListener#onCallRoute"
+  }
+}

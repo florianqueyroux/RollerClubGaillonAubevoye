@@ -1,0 +1,32 @@
+{
+  "baseUrl": "",
+  "domainUrl": "http://127.0.0.1",
+
+  "viewEngine": 0,
+  "bladeCache": "../var/cache",
+  "views": "../templates/views",
+  "layouts": "../templates/layouts",
+
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dbname": "",
+    "user": "",
+    "password": "",
+    "charset": "utf8mb4",
+    "mode": {
+      "fetch": 5,
+      "error": 1
+    }
+  },
+
+  "mail": {
+    "host": "",
+    "port": 0,
+    "user": "",
+    "password": "",
+    "charset": "utf-8",
+    "recipientEmail": "",
+    "recipientName": ""
+  }
+}
