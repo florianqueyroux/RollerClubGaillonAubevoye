@@ -1,0 +1,145 @@
+/*------------------------------ RESET CSS ------------------------------*/
+*:before, *, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* RESET IMG */
+img{
+    display: block;
+    width: 100%;
+}
+/* RESET OTHER*/
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*------------------------------ BODY ------------------------------*/
+body{
+    background-image: url("/assets/logo/viking.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*------------------------------ HEADER ------------------------------*/
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo img:first-child{
+    height: auto;
+    width: 55%;
+}
+.logo img:last-child{
+    width: auto;
+    height:150px;
+}
+/*------------------------------ NAVBAR ------------------------------*/
+#navBar{
+    background-color: rgb(35, 35, 36);
+    border-top: 2px solid rgb(156, 128, 83);
+    border-bottom: 2px solid rgb(156, 128, 83);
+    padding: 1rem;
+    position: relative;
+}
+#navBar .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+#navBar .menu > .menu-item{
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+}
+#navBar .menu > .menu-item:hover, #navBar .menu > .menu-item.active{
+    color: rgb(156, 128, 83);
+}
+#navBar #burger{
+    display: none;
+    color: rgb(156, 128, 83);
+    font-size: 2rem;
+}
+/*------------------------------ FOOTER ------------------------------*/
+/* div parent top-footer*/
+#footer{
+    background-color: rgb(35, 35, 36);
+    color: white;
+    border-top: 3px solid rgb(156, 128, 83);
+    padding: 2rem 2rem 0.5rem;
+}
+#footer .top-footer{
+    display: flex;
+}
+#footer .top-footer .top-footer-item{
+    width: 50%;
+    text-transform: uppercase;
+}
+#footer .top-footer .top-footer-item:first-child{
+    border-right: 1px solid rgb(156, 128, 83);
+}
+#footer .top-footer .top-footer-item:last-child{
+    padding-left: 2rem;
+}
+#footer .top-footer .top-footer-item .footer-title{
+    color: rgb(156, 128, 83);
+}
+#footer .top-footer .top-footer-item .footer-description{
+    padding-top: 1rem;
+    line-height: 2;
+    font-size: 0.9rem;
+}
+#footer .top-footer .top-footer-item .footer-description img{
+    width: 3rem;
+    display: inline-block;
+}
+/* div copy*/
+#footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(156, 128, 83);
+    border-top: 1px solid rgb(156, 128, 83);
+    padding: 0.5rem 0 0;
+    margin-top: 2rem;
+}
+
+/*------------------------------ RESPONSIVE MEDIA QUERY ------------------------------*/
+@media (max-width: 1400px) {
+    .logo img:first-child{
+        display: none;
+    }
+    .logo{
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 992px) {
+    #navBar #burger{
+        display: block;
+    }
+    #navBar .menu{
+        display: block;
+        position: absolute;
+        background-color: rgb(35, 35, 36);
+        height: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        max-width: 100%;
+        transition: 0.5s;
+        overflow: hidden; /*Me permet de cacher les elements quand le menu se repli*/
+    }
+    #navBar .menu .menu-item{
+        padding: 0.8rem 1rem;
+    }
+    #navBar .menu.active{
+        border-top: 2px solid rgb(156, 128, 83);
+        border-bottom: 2px solid rgb(156, 128, 83);
+        height: 420%;
+    }
+}
+main{
+    height: 100px;
+}

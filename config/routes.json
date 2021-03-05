@@ -3,6 +3,72 @@
     "path": "/",
     "controller": "App\\Controller\\HomeController#index"
   },
+  "roller": {
+    "path": "/roller",
+    "controller": "App\\Controller\\RollerController#roller"
+  },
+  "rollerHockey": {
+    "path": "/roller-hockey",
+    "controller": "App\\Controller\\RollerHockeyController#rollerHockey",
+    "children": {
+      "senior": {
+        "path": "/senior",
+        "controller": "App\\Controller\\RollerHockeyController#senior",
+        "children": {
+          "effectif": {
+            "path": "/effectif",
+            "controller": "App\\Controller\\RollerHockeyController#effectif"
+          },
+          "resultat": {
+            "path": "/resultat",
+            "controller": "App\\Controller\\RollerHockeyController#resultat"
+          }
+        }
+      },
+      "jeunesse": {
+        "path": "/jeunesse",
+        "controller": "App\\Controller\\RollerHockeyController#jeunesse",
+        "children": {
+          "effectif": {
+            "path": "/effectif",
+            "controller": "App\\Controller\\RollerHockeyController#effectif"
+          },
+          "resultat": {
+            "path": "/resultat",
+            "controller": "App\\Controller\\RollerHockeyController#resultat"
+          }
+        }
+      }
+    }
+  },
+  "tournois": {
+    "path": "/tournois",
+    "controller": "App\\Controller\\TournoisController#tournois",
+    "children": {
+      "valhallacup": {
+        "path": "/valhallacup",
+        "controller": "App\\Controller\\TournoisController#valhallacup"
+      },
+      "valhallakidz": {
+        "path": "/valhallakidz",
+        "controller": "App\\Controller\\TournoisController#valhallakidz"
+      }
+    }
+  },
+  "boutique": {
+    "path": "/boutique",
+    "controller": "App\\Controller\\BoutiqueController#boutique",
+    "children": {
+      "rcga": {
+        "path": "/rcga",
+        "controller": "App\\Controller\\BoutiqueController#rcga"
+      },
+      "hockey": {
+        "path": "/hockey",
+        "controller": "App\\Controller\\BoutiqueController#hockey"
+      }
+    }
+  },
   "contact": {
     "path": "/contact",
     "controller": "App\\Controller\\HomeController#contact"

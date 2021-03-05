@@ -13,7 +13,5 @@ Kernel::create(
         $configuration->get('baseUrl', '')
     )
 );
-Kernel::get()
-    ->registerListeners(new Configuration('../config/listeners.json'))
-    ->registerRoutes(new Configuration('../config/routes.json'))
-    ->handle();
+Kernel::get()->registerRoutes(new Configuration('../config/routes.json'));
+Kernel::get()->handle();

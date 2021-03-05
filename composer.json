@@ -3,6 +3,9 @@
     "description": "Neutrino is a MVC Framework developed fully by NeutronStars",
     "type": "project",
     "license": [ "Apache-2.0" ],
+    "scripts": {
+        "start": "php -S localhost:5050 -t public/"
+    },
     "authors": [
         {
             "name": "NeutronStars",
