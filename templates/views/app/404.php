@@ -1,10 +1,10 @@
 <main>
-    <div class="container my-5">
-        <div class="jumbotron">
-            <h1 class="display-3">404</h1>
-            <p class="lead">Page Not found !</p>
-            <hr class="my-4">
-            <p>Cette page n'a pas été trouvé !</p>
+    <div id="ouch404">
+        <img src="assets/logo/ouch.jpg" alt="">
+        <div>
+            <h1>404</h1>
+            <p><span>OUCH !</span><br> Page non trouvée...</p>
         </div>
     </div>
+
 </main>

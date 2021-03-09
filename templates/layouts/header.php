@@ -6,8 +6,8 @@
     <div>
         <nav id="navBar">
             <buttom id="burger"><i class="fas fa-bars"></i> Menu</buttom>
-            <ul class="menu active">
-
+            <ul class="menu">
+                
                 <li class="menu-item<?= $router->isRoute("home") ? " active" : "" ?>">
                     <a href="<?=$router->get('home')?>">Le Club</a>
                 </li>

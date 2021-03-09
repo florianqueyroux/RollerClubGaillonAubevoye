@@ -12,4 +12,8 @@ class TournoisController extends Controller
     {
         $this->render('app.tournois');
     }
+    public function valhallakidz ()
+    {
+        $this->render('app.valhallakidz');
+    }
 }
