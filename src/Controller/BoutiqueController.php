@@ -12,4 +12,12 @@ class BoutiqueController extends Controller
     {
         $this->render("app.boutique");
     }
+    public function rcga ()
+    {
+        $this->render("app.rcga");
+    }
+    public function hockey ()
+    {
+        $this->render("app.hockey");
+    }
 }

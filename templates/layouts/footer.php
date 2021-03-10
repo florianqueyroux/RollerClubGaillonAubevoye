@@ -1,28 +1,53 @@
 <footer id="footer">
     <div class="top-footer">
         <div class="top-footer-item">
-            <h3 class="footer-title">CONTACT</h3>
+            <h2 class="footer-title">Siège social</h2>
             <div class="footer-description">
-                <p>Président du Roller Club Gaillon Aubevoye</p>
+                <p>Mairie de Gaillon</p>
+                <p>2 rue du Général de Gaulle</p>
+                <p>27600 Gaillon</p>
+            </div>
+        </div>
+        <div class="top-footer-item">
+            <h2 class="footer-title">Lieu de pratique</h2>
+            <div class="footer-description">
+                <p>Gymnase Benoni</p>
+                <p>20 Rue Maurice Maire</p>
+                <p>27600 Gaillon</p>
+            </div>
+        </div>
+        <div class="top-footer-item">
+            <h2 class="footer-title">Horaires</h2>
+            <div class="footer-description">
+                <p>Lundi : 20h30 à 22h</p>
+                <p>Mercredi : 17h30 à 19h</p>
+                <p>Jeudi : 20h30 à 22h</p>
+                <p>Samedi : 8h30 à 12h</p>
+            </div>
+        </div>
+        <div class="top-footer-item">
+            <h2 class="footer-title">Contact</h2>
+            <div class="footer-description">
+                <p>Roller Club Gaillon Aubevoye</p>
                 <p>Tél : 07.81.58.86.45</p>
-                <p>Email : rcga.president@gmail.com</p>
+                <p>Email : contact.rcga@gmail.com</p>
             </div>
         </div>
 
         <div class="top-footer-item">
-            <h3 class="footer-title">RÉSEAUX SOCIAUX</h3>
+            <h2 class="footer-title">Réseaux sociaux</h2>
             <div class="footer-description">
-                <a href="https://fr-fr.facebook.com/Roller-Club-Gaillon-Aubevoye-75783749968/" target="_blank">
-                    <img src="/assets/logo/logofb.png" alt="Facebook">
+                <a href="https://fr-fr.facebook.com/Roller-Club-Gaillon-Aubevoye-75783749968/" target="_blank" rel="noopener">
+                    <img src="/assets/img/logo/logo-facebook.webp" alt="Facebook">
                 </a>
-                <a href="https://www.youtube.com/channel/UCcTnYA2j_fTALzBx7PICS_w" target="_blank">
-                    <img src="/assets/logo/youtube.png" alt="YouTube">
+                <a href="https://www.youtube.com/channel/UCcTnYA2j_fTALzBx7PICS_w" target="_blank" rel="noopener">
+                    <img src="/assets/img/logo/logo-youtube.webp" alt="YouTube">
                 </a>
-                <a href="https://www.instagram.com/rollerclubdegaillon/" target="_blank">
-                    <img src="/assets/logo/logoinsta.png" alt="Instagram">
+                <a href="https://www.instagram.com/rollerclubdegaillon/" target="_blank" rel="noopener">
+                    <img src="/assets/img/logo/logo-instagram.webp" alt="Instagram">
                 </a>
-                <a href="https://www.besport.com/group/962518" target="_blank">
-                    <img src="/assets/logo/logobesport.png" alt="BeSport">
+                <a href="https://www.besport.com/group/962518" target="_blank" rel="noopener">
+                    <img src="/assets/img/logo/logo-besport.webp" alt="BeSport">
                 </a>
             </div>
         </div>

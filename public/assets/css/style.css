@@ -32,24 +32,56 @@ a{
     font-family: "bigNoodleOblik";
     src: url("/assets/font/big_noodle_titling_oblique_0.ttf");
 }
+/*------------------------------ CLASS GÉNÉRIQUE ------------------------------*/
+.container{
+    width: 1140px;
+    margin: auto;
+    padding: 0.7rem;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex.no-wrap{
+    flex-wrap: nowrap;
+}
+.d-flex.items-center{
+    align-items: center;
+}
+.w-30{
+    width: 30%;
+}
+.w-70{
+    width: 70%;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
 /*------------------------------ BODY ------------------------------*/
 body{
-    background-image: url("/assets/logo/viking.jpg");
+    background-image: url("/assets/img/logo/viking.webp");
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
     font: var(--font-main);
     color: var(--color-light);
 }
+.body-tournois{
+    background-image: url("/assets/img/logo/backVikingRed.webp");
+}
 /*------------------------------ HEADER ------------------------------*/
 .logo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 }
 .logo img:first-child{
-    height: auto;
-    width: 55%;
+    height: 100px;
+    width: auto;
 }
 .logo img:last-child{
     width: auto;
@@ -73,7 +105,7 @@ body{
 #navBar .menu > .menu-item{
     color: var(--color-light);
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 #navBar .menu > .menu-item:hover, #navBar .menu > .menu-item.active{
     color: var(--color-gold);
@@ -83,19 +115,44 @@ body{
     color: var(--color-gold);
     font-size: 2rem;
 }
+/*------------------------------ TOURNOIS ------------------------------*/
+#tournois > h1{
+    text-align: center;
+    font-size: 4rem;
+}
+#tournois h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+#tournois .d-flex{
+    background-color: var(--color-dark);
+    border: 5px solid var(--color-gold);
+    border-radius: 40px;
+}
+#tournois > a{
+    display: block;
+    margin: 3rem 0; /* 1er valeur= haut et bas //////  2eme valeur= gauche et droite */
+}
+#tournois .d-flex .w-70 > p{
+    margin-top: 1.5rem;
+    text-align: justify;
+}
 /*------------------------------ VALHALLA KID'Z ------------------------------*/
 main #kidz{
     text-align: center;
 }
 main #kidz > h1{
     margin: 3rem;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px var(--color-gold);
+    font-size: 4rem;
 }
 main #kidz > h1 > span{
     font-family: var(--font-main-family-italik);
 }
 main #kidz > iframe{
-    width: 80%;
-    height: 1000px;
+    width: 960px;
+    height: 542px;
 }
 /*------------------------------ 404 ------------------------------*/
 main #ouch404 {
@@ -129,12 +186,12 @@ main #ouch404 > div p span{
 }
 #footer .top-footer{
     display: flex;
+    flex-wrap: wrap;
 }
 #footer .top-footer .top-footer-item{
-    width: 50%;
-    text-transform: uppercase;
+    width: 20%;
 }
-#footer .top-footer .top-footer-item:first-child{
+#footer .top-footer .top-footer-item:nth-last-child(2){
     border-right: 1px solid var(--color-gold);
 }
 #footer .top-footer .top-footer-item:last-child{
@@ -151,10 +208,12 @@ main #ouch404 > div p span{
 #footer .top-footer .top-footer-item .footer-description img{
     width: 3rem;
     display: inline-block;
+    margin: 0.3rem;
 }
 /* div copy*/
 #footer .copyright{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: var(--color-gold);
     border-top: 1px solid var(--color-gold);
@@ -169,6 +228,11 @@ main #ouch404 > div p span{
     }
     .logo{
         justify-content: flex-end;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 100%;
     }
 }
 @media (max-width: 992px) {
@@ -202,6 +266,11 @@ main #ouch404 > div p span{
         border-bottom: 2px solid var(--color-gold);
         height: 420%;
     }
+    /* VALHALLA KID'Z*/
+    main #kidz > iframe{ /* calcul du ratio */
+        width: calc(100vw - 20px); /* Taille total - 20px avec le calcul*/
+        height: calc(calc(100vw - 20px) / 1.77); /* 1.77 est le ratio L l */
+    }
     /* 404 */
     main #ouch404 > div h1{
         font-size: 6rem;
@@ -209,8 +278,42 @@ main #ouch404 > div p span{
     main #ouch404 > div p{
         font-size: 3rem;
     }
+    /* FOOTER */
+    #footer .top-footer .top-footer-item{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    #footer .top-footer .top-footer-item:nth-last-child(2){
+        border: none;
+    }
+    #footer .top-footer .top-footer-item:last-child{
+        padding-left: 0;
+        width: 100%;
+        border-top: 1px solid var(--color-gold);
+        padding-top: 2rem;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* MOBILE */
+    /* LOGO*/
+    .logo img:last-child{
+        width: 100%;
+        height: auto;
+    }
+    /* TOURNOIS*/
+    .w-sm-100{
+        width: 100%;
+    }
+    .flex-sm-reverse{
+        flex-direction: column-reverse;
+    }
+    .px-sm-1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #tournois h2{
+        margin-top: 2rem;
+    }
     /* 404 */
     main #ouch404 > div{
         top: 1.5rem;
@@ -224,5 +327,13 @@ main #ouch404 > div p span{
     }
     main #ouch404 > div p{
         font-size: 2rem;
+    }
+    /* FOOTER */
+    #footer .top-footer .top-footer-item{
+        width: 100%;
+    }
+    #footer .copyright{
+        width: 100%;
+        justify-content: center;
     }
 }

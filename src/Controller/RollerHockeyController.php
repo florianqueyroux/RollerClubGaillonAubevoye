@@ -12,4 +12,12 @@ class RollerHockeyController extends Controller
     {
         $this->render('app.rollerhockey');
     }
+    public function senior ()
+    {
+        $this->render('app.senior');
+    }
+    public function jeunesse ()
+    {
+        $this->render('app.jeunesse');
+    }
 }

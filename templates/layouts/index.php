@@ -11,7 +11,7 @@
         <script src="/assets/js/app.js" defer></script>
 
     </head>
-    <body>
+    <body class="<?= !empty($pageTournois) ? "body-tournois" : "" ?>"> <!--si la page tournoi fut defini et n'est pas vide/faux ?alors body tournoi :sinon body normal-->
         <?php
             include_once __DIR__ . '/header.php';
             echo $view;

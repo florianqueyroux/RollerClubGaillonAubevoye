@@ -1,7 +1,7 @@
 <header>
     <div class="logo">
-        <img src="/assets/logo/logoEcriture.png" alt="Roller Club Gaillon Aubevoye">
-        <img src="/assets/logo/rcga.png" alt="Logo RCGA">
+        <img src="/assets/img/logo/logo-ecriture-roller-club-gaillon-aubevoye.webp" alt="Roller Club Gaillon Aubevoye">
+        <img src="/assets/img/logo/logo-rcga.webp" alt="Logo RCGA">
     </div>
     <div>
         <nav id="navBar">
