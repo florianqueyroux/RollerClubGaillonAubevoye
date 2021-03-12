@@ -1,7 +1,11 @@
 {
   "home": {
     "path": "/",
-    "controller": "App\\Controller\\HomeController#index"
+    "controller": "App\\Controller\\ClubController#index"
+  },
+  "equipe": {
+    "path": "/equipe",
+    "controller": "App\\Controller\\EquipeController#equipe"
   },
   "roller": {
     "path": "/roller",

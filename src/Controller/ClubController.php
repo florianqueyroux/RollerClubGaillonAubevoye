@@ -9,11 +9,11 @@ use NeutronStars\Form\Bootstrap\XSRFElement;
 use NeutronStars\Form\Form;
 use NeutronStars\Neutrino\Core\Controller;
 
-class HomeController extends Controller
+class ClubController extends Controller
 {
     public function index(): void
     {
-        $this->render('app.home');
+        $this->render('app.club');
     }
 
     public function contact(): void
