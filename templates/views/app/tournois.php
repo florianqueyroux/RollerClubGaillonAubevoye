@@ -32,5 +32,4 @@
             <img class="w-30 w-sm-100" src="/assets/img/logo/logo-valhallakidz-rcga.webp" alt="Logo Valhalla Kid'Z">
         </div>
     </a>
-
 </main>

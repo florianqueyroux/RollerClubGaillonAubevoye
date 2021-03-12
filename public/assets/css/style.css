@@ -51,8 +51,20 @@ a{
 .w-30{
     width: 30%;
 }
+.w-33{
+    width: 33.333333%;
+}
+.w-50{
+    width: 50%;
+}
 .w-70{
     width: 70%;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
 }
 .p-1{
     padding: 1rem;
@@ -154,6 +166,59 @@ main #kidz > iframe{
     width: 960px;
     height: 542px;
 }
+/*------------------------------ BOUTIQUE RCGA ------------------------------*/
+main #work {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+main #work > div{
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    color: rgb(35, 35, 36);
+}
+main #work > div h1{
+    font-size: 6rem;
+}
+main #work > div p{
+    font-size: 3rem;
+    font-family: var(--font-main-family-italik);
+}
+/*------------------------------ BOUTIQUE HOCKEY ------------------------------*/
+#hockey > h1{
+    text-align: center;
+    font-size: 4rem;
+}
+#hockey h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-main-family-italik);
+    margin-top: 2rem;
+}
+#hockey h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+#hockey .d-flex .d-flex{
+    background-color: var(--color-dark);
+    border: 5px solid var(--color-gold);
+    border-radius: 40px;
+}
+#hockey > a{
+    display: block;
+    margin: 3rem 0; /* 1er valeur= haut et bas //////  2eme valeur= gauche et droite */
+}
+#hockey .d-flex p{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+#hockey .d-flex .price{
+    color: var(--color-gold);
+    font-size: 3rem;
+    font-family: var(--font-main-family-italik);
+}
 /*------------------------------ 404 ------------------------------*/
 main #ouch404 {
     position: relative;
@@ -177,7 +242,7 @@ main #ouch404 > div p span{
     font-weight: 600;
 }
 /*------------------------------ FOOTER ------------------------------*/
-/* div parent top-footer*/
+/* div parent top-footer */
 #footer{
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -210,7 +275,7 @@ main #ouch404 > div p span{
     display: inline-block;
     margin: 0.3rem;
 }
-/* div copy*/
+/* div copy */
 #footer .copyright{
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +300,11 @@ main #ouch404 > div p span{
         width: 100%;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 992px) { /* MD */
+    /* CLASS GENERIQUE*/
+    .w-md-50{
+        width: 50%;
+    }
     /* NAVBAR */
     #navBar #burger{
         display: block;
@@ -266,10 +335,17 @@ main #ouch404 > div p span{
         border-bottom: 2px solid var(--color-gold);
         height: 420%;
     }
-    /* VALHALLA KID'Z*/
+    /* VALHALLA KID'Z */
     main #kidz > iframe{ /* calcul du ratio */
         width: calc(100vw - 20px); /* Taille total - 20px avec le calcul*/
         height: calc(calc(100vw - 20px) / 1.77); /* 1.77 est le ratio L l */
+    }
+    /* RCGA*/
+    main #work > div h1{
+        font-size: 3rem;
+    }
+    main #work > div p{
+        font-size: 3rem;
     }
     /* 404 */
     main #ouch404 > div h1{
@@ -294,13 +370,13 @@ main #ouch404 > div p span{
         padding-top: 2rem;
     }
 }
-@media (max-width: 768px) { /* MOBILE */
-    /* LOGO*/
+@media (max-width: 768px) { /* MOBILE // SM // */
+    /* LOGO */
     .logo img:last-child{
         width: 100%;
         height: auto;
     }
-    /* TOURNOIS*/
+    /* TOURNOIS */
     .w-sm-100{
         width: 100%;
     }
@@ -312,6 +388,15 @@ main #ouch404 > div p span{
         padding-right: 1rem;
     }
     #tournois h2{
+        margin-top: 2rem;
+    }
+    /* BOUTIQUE RCGA */
+    main #work > div{
+        top: 1rem;
+        left: 0.5rem;
+    }
+    /* BOUTIQUE HOCKEY*/
+    #hockey h3{
         margin-top: 2rem;
     }
     /* 404 */
