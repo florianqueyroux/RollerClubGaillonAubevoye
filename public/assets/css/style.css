@@ -29,13 +29,19 @@ hr{
     border-top: 2px dashed var(--color-gold);
     margin: 0.5rem 1rem;
 }
+input, textarea, select, button{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main-family);
+    outline: none;
+}
 /*------------------------------ TYPO ------------------------------*/
 @font-face {
     font-family: "bigNoodle";
-    src: url("/assets/font/big_noodle_titling_0.ttf");
+    src: url("../font/big_noodle_titling_0.ttf");
 }@font-face {
     font-family: "bigNoodleOblik";
-    src: url("/assets/font/big_noodle_titling_oblique_0.ttf");
+    src: url("../font/big_noodle_titling_oblique_0.ttf");
 }
 /*------------------------------ CLASS GÉNÉRIQUE ------------------------------*/
 .container{
@@ -130,9 +136,52 @@ hr{
 .d-block{
     display: block;
 }
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.bg{
+    background-color: var(--color-dark);
+}
+.sa{
+    justify-content: space-around;
+}
+.border{
+    border: 3px solid var(--color-gold);
+}
+.radius{
+    border-radius: 40px;
+}
+/* Form */
+.form-group{
+    display: block;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+.form-group .form-label{
+    display: block;
+    width: 100%;
+    color: var(--color-gold);
+    font-family: var(--font-main-family-italik);
+    font-size: 1.5rem;
+}
+.form-group .form-input{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-gold);
+    border-radius: .7rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+.form-group .form-error{
+    color: red;
+}
+.form-group .form-error ~ .form-input{
+    border: 1px solid red;
+}
 /*------------------------------ BODY ------------------------------*/
 body{
-    background-image: url("/assets/img/logo/viking.webp");
+    background-image: url("../img/logo/viking.webp");
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +189,7 @@ body{
     color: var(--color-light);
 }
 .body-tournois{
-    background-image: url("/assets/img/logo/backVikingRed.webp");
+    background-image: url("../img/logo/backVikingRed.webp");
 }
 /*------------------------------ HEADER ------------------------------*/
 .logo{
@@ -186,6 +235,11 @@ body{
     font-size: 2rem;
 }
 /*------------------------------ CLUB ------------------------------*/
+.container-xl h1 >span{
+    color: var(--color-gold);
+    font-size: 6rem;
+    font-family: var(--font-main-family-italik);
+}
 /* SIDEBAR */
 .container-xl .sidebar{
     background-color: var(--color-dark);
@@ -265,11 +319,118 @@ body{
 .container-xl .partners{
     background-color: var(--color-dark);
     border: 3px solid var(--color-gold);
+    border-radius: 0px 0px 40px 40px;
 }
 .container-xl .partners > h2{
     color: var(--color-gold);
     font-size: 3rem;
     margin-bottom: 2rem;
+}
+/*------------------------------ EQUIPE ------------------------------*/
+.container .office{
+    background-color: var(--color-dark);
+    border: 3px solid var(--color-gold);
+}
+.container .leaders{
+    border-radius: 40px 40px 0px 0px;
+}
+.container .office > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .team-list{
+    justify-content: center;
+}
+.container .office figure{
+    text-align: center;
+}
+.container .office figcaption{
+    color: var(--color-gold);
+    font-size: 1.8rem;
+}
+.container .office p{
+    font-family: var(--font-main-family-italik);
+    font-size: 1.1rem;
+}
+.container .ca{
+    border-radius: 0px 0px 40px 40px;
+}
+/*------------------------------ ROLLER ------------------------------*/
+.container .roller{
+    border: 3px solid var(--color-gold);
+    border-radius: 40px 40px 0px 0px;
+}
+.container .roller > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .price-roller{
+    border: 3px solid var(--color-gold);
+}
+.container .price > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .price-item > h3{
+    color: var(--color-gold);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-main-family-italik);
+}
+.container .price-item{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.container .supervisor{
+    border: 3px solid var(--color-gold);
+    border-radius: 0px 0px 40px 40px;
+}
+.container .supervisor > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .supervisor figcaption {
+    color: var(--color-gold);
+    font-size: 1.8rem;
+}
+.container .supervisor figure{
+    text-align: center;
+}
+/*------------------------------ ROLLER HOCKEY ------------------------------*/
+.container .warrior{
+    border: 3px solid var(--color-gold);
+    border-radius: 40px 40px 40px 40px;
+}
+.container .warrior h2{
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 3rem;
+}
+.container .warrior .detail-team{
+    text-align: center;
+    font-family: var(--font-main-family-italik);
+    font-size: 1.5rem;
+}
+.container .history{
+    border: 3px solid var(--color-gold);
+}
+.container .history > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .history{
+    text-align: justify;
+}
+.container .history > p{
+    padding: 0.5rem;
+}
+.container .hockey{
+    border-radius: 0px 0px 40px 40px;
 }
 /*------------------------------ TOURNOIS ------------------------------*/
 #tournois > h1{
@@ -294,6 +455,74 @@ body{
     margin-top: 1.5rem;
     text-align: justify;
 }
+/*------------------------------ VALHALLA CUP ------------------------------*/
+/* Présentation */
+.container .presentation{
+    border: 3px solid var(--color-gold);
+    text-align: justify;
+}
+.container .presentation > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+/* Poster*/
+.container .poster{
+    border: 3px solid var(--color-gold);
+}
+.container .poster > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .poster figure{
+    text-align: center;
+}
+.container .poster figcaption{
+    color: var(--color-gold);
+    font-size: 1.3rem;
+}
+/* Creator */
+.container .creator{
+    border: 3px solid var(--color-gold);
+}
+.container .creator > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .creator figure{
+    text-align: center;
+}
+.container .creator figcaption{
+    color: var(--color-gold);
+    font-size: 1.3rem;
+}
+.container .creator p{
+    font-family: var(--font-main-family-italik);
+    font-size: 1.1rem;
+}
+/* Staff */
+.container .staff{
+    border: 3px solid var(--color-gold);
+    border-radius: 0px 0px 40px 40px;
+}
+.container .staff > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.container .staff figure{
+    text-align: center;
+}
+.container .staff figcaption{
+    color: var(--color-gold);
+    font-size: 1.3rem;
+}
+.container .staff p{
+    font-family: var(--font-main-family-italik);
+    font-size: 1.1rem;
+}
 /*------------------------------ VALHALLA KID'Z ------------------------------*/
 main #kidz{
     text-align: center;
@@ -309,6 +538,52 @@ main #kidz > h1 > span{
 main #kidz > iframe{
     width: 960px;
     height: 542px;
+}
+/*------------------------------ BOUTIQUE ------------------------------*/
+#shop > h1{
+    text-align: center;
+    font-size: 4rem;
+}
+#shop h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+#shop .d-flex{
+    background-color: var(--color-dark);
+    border: 5px solid var(--color-gold);
+    border-radius: 40px;
+}
+#shop > a{
+    display: block;
+    margin: 3rem 0; /* 1er valeur= haut et bas //////  2eme valeur= gauche et droite */
+}
+#shop .d-flex .w-70 > p{
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+/*------------------------------ BOUTIQUE RCGA ------------------------------*/
+#boutique > h1{
+    text-align: center;
+    font-size: 4rem;
+}
+#boutique h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+#boutique .d-flex{
+    background-color: var(--color-dark);
+    border: 5px solid var(--color-gold);
+    border-radius: 40px;
+}
+#boutique > a{
+    display: block;
+    margin: 3rem 0; /* 1er valeur= haut et bas //////  2eme valeur= gauche et droite */
+}
+#boutique .d-flex .w-70 > p{
+    margin-top: 1.5rem;
+    text-align: justify;
 }
 /*------------------------------ BOUTIQUE RCGA ------------------------------*/
 main #work {

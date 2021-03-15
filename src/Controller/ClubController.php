@@ -14,7 +14,18 @@ class ClubController extends Controller
     public function index(): void
     {
         $this->render('app.club');
+
     }
+    /*public function equipe(): void{
+        $this->render('app.equipe');
+        function age($date) {
+            $age = date('Y') - $date;
+            if (date('md') < date('md', strtotime($date))) {
+                return $age - 1;
+            }
+            return $age;
+        }
+    }*/
 
     public function contact(): void
     {

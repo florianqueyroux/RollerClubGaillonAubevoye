@@ -1,5 +1,7 @@
 <main class="container-xl">
-    <h1>Bienvenue au Roller Club Gaillon Aubevoye</h1>
+    <h1>Bienvenue <br>au <br>
+        <span>R</span>oller <span>C</span>lub <span>G</span>aillon <span>A</span>ubevoye
+    </h1>
     <div class="d-flex">
         <div class="w-25 p-1 d-md-none">
             <div class="sidebar">
@@ -105,31 +107,29 @@
                     <a class="btn" href="<?= $router->get('equipe') ?>">Voir plus...</a>
                 </div>
             </div>
-            <div class="partners">
+            <div class="partners py-1 px-2">
                 <h2>Nos partenaires</h2>
                 <div class="d-flex">
-                    <a class="d-block w-33" href="https://promoglace.com">
+                    <a class="d-block w-50 p-2" href="https://bauer-hockey.fr">
                         <img src="/assets/img/partenaires/logo-mission-hockey.webp" alt="MISSION">
                     </a>
-
-                    <a class="d-block w-33" href="http://creation.cdn.free.fr">
+                    <a class="d-block w-50 p-2" href="http://creation.cdn.free.fr">
                         <img src="/assets/img/partenaires/logo-creation-design-numerique.webp" alt="CDN">
                     </a>
-
-                    <a class="d-block w-33" href="https://promoglace.com">
-                        <img src="/assets/img/partenaires/logo-bauer.webp" alt="BAUER">
+                    <a class="d-block w-50 p-2" href="https://bauer-hockey.fr">
+                        <img src="/assets/img/partenaires/logo-bauer-hockey.webp" alt="BAUER">
                     </a>
-
-                    <a class="d-block w-33" href="#">
+                    <a class="d-block w-50 p-2" href="https://promoglace.com">
+                        <img src="/assets/img/partenaires/logo-promoglace.webp" alt="MISSION">
+                    </a>
+                    <a class="d-block w-33 p-2" href="https://www.normandie.fr">
                         <img src="/assets/img/partenaires/logo-region-normandie.webp" alt="Region Normandie">
                     </a>
-
-                    <a class="d-block w-33" href="#">
-                        <img src="/assets/img/partenaires/logo-departement.webp" alt="Département de l'Eure">
+                    <a class="d-block w-33 p-2" href="https://eureennormandie.fr">
+                        <img src="/assets/img/partenaires/logo-departement-eure.webp" alt="Département de l'Eure">
                     </a>
-
-                    <a class="d-block w-33" href="#">
-                        <img src="/assets/img/partenaires/agglo.webp" alt="Agglo Seine Eure">
+                    <a class="d-block w-33 p-2" href="https://www.agglo-seine-eure.fr">
+                        <img src="/assets/img/partenaires/logo-agglo-seine-eure.webp" alt="Agglo Seine Eure">
                     </a>
                 </div>
             </div>
