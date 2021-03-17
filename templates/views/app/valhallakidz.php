@@ -1,3 +1,4 @@
+<?php $titre = 'Valhalla Kid\'Z - Roller Club Gaillon Aubevoye' ?>
 <main>
     <div id="kidz">
         <h1>La Valhalla <span>Kid'Z</span><br> arrive...</h1>

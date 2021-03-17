@@ -1,3 +1,4 @@
+<?php $titre = 'Contact Club - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <h1>Informations de contact</h1>
     <div class="contact bg border radius p-2 my-2">

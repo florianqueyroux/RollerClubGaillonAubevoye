@@ -1,3 +1,4 @@
+<?php $titre = 'Les Dirigeants du club - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <h1>Découvrez <br>les <br>dirigeants du RCGA</h1>
     <div class="office leaders my-2 py-1 px-2">
@@ -8,7 +9,7 @@
                 <figcaption>Florian QUEYROUX</figcaption>
                 <p>Âge :&nbsp; <?= $age('1986-12-22')?> ans</p>
                 <p>Président</p>
-                <p>Gestion des Partenaires</p>
+                <p>Gestion partenaires materiel et graphiste</p>
                 <p>Créateur & Organisateur des "Valhalla"</p>
                 <p>Joueur de l'équipe hockey Senior</p>
             </figure>

@@ -1,3 +1,4 @@
+<?php $titre = 'Le Roller - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <h1>Le Roller rando</h1>
     <div class="roller bg my-2 py-1 px-2">
