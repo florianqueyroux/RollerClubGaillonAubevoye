@@ -1,4 +1,4 @@
-<?php $titre = 'Boutique - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Boutique - Roller Club Gaillon Aubevoye' ?>
 <main id="shop" class="container">
     <h1>La Boutique du club</h1>
     <a href="<?= $router->get('boutique.rcga') ?>">

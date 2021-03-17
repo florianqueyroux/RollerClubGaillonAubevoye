@@ -1,4 +1,4 @@
-<?php $titre = 'Roller Club Gaillon Aubevoye (RCGA)' ?>
+<?php $title = 'Roller Club Gaillon Aubevoye (RCGA)' ?>
 <main class="container-xl">
     <h1>
         <span><span>R</span>oller </span>

@@ -1,4 +1,4 @@
-<?php $titre = 'Boutique RCGA - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Boutique RCGA - Roller Club Gaillon Aubevoye' ?>
 <main>
     <div id="work">
         <img src="/assets/img/logo/workInProgress.webp" alt="">

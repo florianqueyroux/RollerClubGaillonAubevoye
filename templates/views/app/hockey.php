@@ -1,4 +1,4 @@
-<?php $titre = 'Boutique Hockey - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Boutique Hockey - Roller Club Gaillon Aubevoye' ?>
 <main id="hockey" class="container">
     <h1>La Boutique du hockeyeur</h1>
     <h2>Maillots & pantalon <br>hockey</h2>

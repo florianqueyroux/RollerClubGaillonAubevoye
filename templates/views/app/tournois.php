@@ -1,4 +1,4 @@
-<?php $titre = 'Les Tournois - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Les Tournois - Roller Club Gaillon Aubevoye' ?>
 <main id="tournois" class="container">
     <h1>Les Tournois</h1>
     <a href="<?= $router->get('tournois.valhallacup') ?>">

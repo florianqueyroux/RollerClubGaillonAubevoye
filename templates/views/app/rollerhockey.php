@@ -1,4 +1,4 @@
-<?php $titre = 'Les VIKINGS Roller Hockey - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Les VIKINGS Roller Hockey - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <h1>Le roller hockey</h1>
     <div class="d-flex">

@@ -1,4 +1,4 @@
-<?php $titre = 'Valhalla CUP - Roller Club Gaillon Aubevoye' ?>
+<?php $title = 'Valhalla CUP - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <div class="presentation bg py-1 px-2">
         <h2>L'histoire de la Valhalla CUP</h2>
