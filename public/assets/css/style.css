@@ -63,6 +63,9 @@ input, textarea, select, button{
 .d-flex.items-center{
     align-items: center;
 }
+.w-20{
+    width: 20%;
+}
 .w-25{
     width: 25%;
 }
@@ -235,7 +238,7 @@ body{
     font-size: 2rem;
 }
 /*------------------------------ CLUB ------------------------------*/
-.container-xl h1 >span{
+.container-xl h1 > span > span{
     color: var(--color-gold);
     font-size: 6rem;
     font-family: var(--font-main-family-italik);
@@ -284,12 +287,14 @@ body{
 .container-xl .presentation{
     background-color: var(--color-dark);
     border: 3px solid var(--color-gold);
-    text-align: justify;
 }
 .container-xl .presentation > h2{
     color: var(--color-gold);
     font-size: 3rem;
     margin-bottom: 2rem;
+}
+.container-xl .presentation > p{
+    text-align: justify;
 }
 /* LEADER */
 .container-xl .leader{
@@ -319,7 +324,7 @@ body{
 .container-xl .partners{
     background-color: var(--color-dark);
     border: 3px solid var(--color-gold);
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0 0 40px 40px;
 }
 .container-xl .partners > h2{
     color: var(--color-gold);
@@ -332,7 +337,7 @@ body{
     border: 3px solid var(--color-gold);
 }
 .container .leaders{
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 40px 40px 0 0;
 }
 .container .office > h2{
     color: var(--color-gold);
@@ -354,12 +359,12 @@ body{
     font-size: 1.1rem;
 }
 .container .ca{
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0 0 40px 40px;
 }
 /*------------------------------ ROLLER ------------------------------*/
 .container .roller{
     border: 3px solid var(--color-gold);
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 40px 40px 0 0;
 }
 .container .roller > h2{
     color: var(--color-gold);
@@ -369,7 +374,7 @@ body{
 .container .price-roller{
     border: 3px solid var(--color-gold);
 }
-.container .price > h2{
+.container .price-roller > h2{
     color: var(--color-gold);
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -386,7 +391,7 @@ body{
 }
 .container .supervisor{
     border: 3px solid var(--color-gold);
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0 0 40px 40px;
 }
 .container .supervisor > h2{
     color: var(--color-gold);
@@ -423,14 +428,19 @@ body{
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.container .history{
+.container .history > p{
     text-align: justify;
 }
 .container .history > p{
     padding: 0.5rem;
 }
 .container .hockey{
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0 0 40px 40px;
+}
+.container .hockey > h2 {
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 /*------------------------------ TOURNOIS ------------------------------*/
 #tournois > h1{
@@ -505,7 +515,7 @@ body{
 /* Staff */
 .container .staff{
     border: 3px solid var(--color-gold);
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0 0 40px 40px;
 }
 .container .staff > h2{
     color: var(--color-gold);
@@ -529,7 +539,7 @@ main #kidz{
 }
 main #kidz > h1{
     margin: 3rem;
-    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px var(--color-gold);
+    text-shadow: 2px 2px 0 #FFFFFF, 5px 4px 0 var(--color-gold);
     font-size: 4rem;
 }
 main #kidz > h1 > span{
@@ -637,6 +647,12 @@ main #work > div p{
     color: var(--color-gold);
     font-size: 3rem;
     font-family: var(--font-main-family-italik);
+}
+/*------------------------------ CONTACT ------------------------------*/
+.container .contact > h2 , .container .street > h2{
+    color: var(--color-gold);
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 /*------------------------------ 404 ------------------------------*/
 main #ouch404 {
@@ -802,6 +818,17 @@ main #ouch404 > div p span{
     .logo img:last-child{
         width: 100%;
         height: auto;
+    }
+    /* CLUB */
+    .container-xl h1{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+    .container-xl h1 > span{
+        display: block;
+        text-align: left;
     }
     /* TOURNOIS */
     .w-sm-100{

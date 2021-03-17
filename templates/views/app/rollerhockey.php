@@ -92,19 +92,19 @@
     </div>
     <div class="price-roller hockey d-flex bg my-2 py-1 px-2">
         <h2 class="w-100">Nos horaires & tarifs</h2>
-        <div class="price-item w-33 py-1 px-2">
+        <div class="price-item w-33 py-1 px-2 w-sm-100">
             <h3>Roller Jeunesse</h3>
             <p>Le mercredi de 17h30 à 19h</p>
             <p>Le samedi de 08h30 à 10h</p>
             <p>Prix de la licence : 70€</p>
         </div>
-        <div class="price-item w-33 py-1 px-2">
+        <div class="price-item w-33 py-1 px-2 w-sm-100">
             <h3>Roller Hockey Adulte</h3>
             <p>Le lundi de 20h30 à 22h</p>
             <p>Le Jeudi de 20h30 à 22h</p>
             <p>Prix de la licence : 100€</p>
         </div>
-        <div class="price-item w-33 py-1 px-2">
+        <div class="price-item w-33 py-1 px-2 w-sm-100">
             <h3>Reduction famille</h3>
             <p>2 pers : -10%</p>
             <p>3 pers & plus : -20%</p>

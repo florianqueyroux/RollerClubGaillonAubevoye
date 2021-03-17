@@ -30,11 +30,11 @@
     <div class="poster bg my-2 py-1 px-2">
         <h2>Les affiches de la Valhalla CUP</h2>
         <div class="d-flex team-list">
-            <figure class="w-50 p-1">
+            <figure class="w-50 p-1 w-sm-100">
                 <img src="/assets/img/affiches/edition1.webp" alt="1er Édition">
                 <figcaption>1er édition</figcaption>
             </figure>
-            <figure class="w-50 p-1">
+            <figure class="w-50 p-1 w-sm-100">
                 <img src="/assets/img/affiches/edition2.webp" alt="2ème Édition">
                 <figcaption>2ème édition</figcaption>
             </figure>
@@ -43,19 +43,19 @@
     <div class="creator bg my-2 py-1 px-2">
         <h2>Les créateur & organisateur</h2>
         <div class="d-flex team-list">
-            <figure class="w-33 p-1">
+            <figure class="w-33 p-1 w-sm-100">
                 <img src="/assets/img/equipe/team2.jpg" alt="Florian QUEYROUX">
                 <figcaption>Florian QUEYROUX</figcaption>
                 <p>Créateur & Organisateur</p>
                 <p>Organisation générale</p>
             </figure>
-            <figure class="w-33 p-1">
+            <figure class="w-33 p-1 w-sm-100">
                 <img src="/assets/img/equipe/team3.jpg" alt="Emmanuel WIART">
                 <figcaption>Emmanuel WIART</figcaption>
                 <p>Créateur & Organisateur</p>
                 <p>Organisation générale</p>
             </figure>
-            <figure class="w-33 p-1">
+            <figure class="w-33 p-1 w-sm-100">
                 <img src="/assets/img/equipe/team3.jpg" alt="Crédric GRARD">
                 <figcaption>Crédric GRARD</figcaption>
                 <p>Organisateur</p>
@@ -66,13 +66,13 @@
     <div class="staff bg my-2 py-1 px-2">
         <h2>Le Staff</h2>
         <div class="d-flex team-list">
-            <figure class="w-50 p-1">
+            <figure class="w-50 p-1 w-sm-100">
                 <img src="/assets/img/equipe/team1.jpg" alt="Julie OBERT">
                 <figcaption>Julie OBERT</figcaption>
                 <p>Bénévole Buvette</p>
                 <p>Bonne humeur / Sourire / rigole tres fort</p>
             </figure>
-            <figure class="w-50 p-1">
+            <figure class="w-50 p-1 w-sm-100">
                 <img src="/assets/img/equipe/team1.jpg" alt="Frédérique LUC">
                 <figcaption>Frédérique LUC</figcaption>
                 <p>Bénévole buvette</p>
