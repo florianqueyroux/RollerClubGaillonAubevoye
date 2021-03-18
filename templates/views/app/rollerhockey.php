@@ -1,7 +1,7 @@
 <?php $title = 'Les VIKINGS Roller Hockey - Roller Club Gaillon Aubevoye' ?>
 <main class="container">
     <h1>Le roller hockey</h1>
-    <div class="d-flex">
+    <div class="d-flex my-2">
         <div class="w-50 p-1 w-sm-100">
             <div class="warrior d-flex bg p-2 px-sm-1">
                 <img class="w-100 p-1"

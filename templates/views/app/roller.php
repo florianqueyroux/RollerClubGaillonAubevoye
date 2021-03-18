@@ -11,10 +11,33 @@
             <p>Nous proposons également différentes animations selon les évènements 
                 (halloween, noël, galette etc......)</p>
         </div>
-        <div class="d-flex w-100" >
-            <img class="w-33 p-1 w-sm-100" src="/assets/img/roller/roller1.webp" alt="">
-            <img class="w-33 p-1 w-sm-100" src="/assets/img/roller/roller2.webp" alt="">
-            <img class="w-33 p-1 w-sm-100" src="/assets/img/roller/roller3.webp" alt="">
+    </div>
+    <!--CAROUSEL -->
+    <div class="border bg">
+        <div id="container">
+            <div id="toggleContainer">
+                <label>Carousel</label>
+                <div id="toggle">
+                    <div id="outer3">
+                        <div id="slider3"></div>
+                    </div>
+                    <label>Diaporama</label>
+                </div>
+            </div>
+            <div id="galleryView">
+                <div id="galleryContainer">
+                    <div id="leftView"></div>
+                    <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                    <a id="linkTag">
+                        <div id="mainView"></div>
+                    </a>
+                    <div id="rightView"></div>
+                    <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                </div>
+            </div>
+            <div id="tilesView">
+                <div id="tilesContainer"></div>
+            </div>
         </div>
     </div>
     <div class="price-roller d-flex bg my-2 py-1 px-2">
@@ -48,9 +71,4 @@
             </figure>
         </div>
     </div>
-
-
-
-
-
 </main>
