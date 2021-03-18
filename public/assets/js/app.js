@@ -56,7 +56,7 @@ function toggleState3() {
             tileItem.style.backgroundRepeat = "no-repeat";
             tilesContainer.appendChild(tileItem);
         }
-    };
+    }
 }
 
 let imgObject = [
@@ -87,7 +87,7 @@ function loadGallery() {
     let linkTag = document.getElementById("linkTag")
     linkTag.href = imgObject[mainImg];
 
-};
+}
 
 function scrollRight() {
 
@@ -97,9 +97,9 @@ function scrollRight() {
         nextImg = 0;
     } else {
         nextImg++;
-    };
+    }
     loadGallery();
-};
+}
 
 function scrollLeft() {
     nextImg = mainImg
@@ -109,9 +109,9 @@ function scrollLeft() {
         prevImg = imgObject.length - 1;
     } else {
         prevImg--;
-    };
+    }
     loadGallery();
-};
+}
 if(outer3){
     document.getElementById("navRight").addEventListener("click", scrollRight);
     document.getElementById("navLeft").addEventListener("click", scrollLeft);

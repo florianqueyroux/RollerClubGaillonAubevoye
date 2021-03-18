@@ -6,9 +6,9 @@
         <div>
             <p>Venez apprendre les bases du roller dans un lieux abrité et sécurisé.</p>
             <p>Nos encadrants sont tous titulaires du BIF (brevet d'initiateur fédéral).</p>
-            <p>Nos cours s'adressent aussi bien aux enfants qu'aux adultes.</p>
+            <p>Nos cours s'adressent aussi bien aux enfants qu'aux adultes.</p>
             <p>Les cours enfants et adultes sont à des horaires différents.</p>
-            <p>Nous proposons également différentes animations selon les évènements 
+            <p>Nous proposons également différentes animations selon les évènements
                 (halloween, noël, galette etc......)</p>
         </div>
     </div>

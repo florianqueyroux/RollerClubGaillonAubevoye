@@ -152,6 +152,9 @@ h1{
 .sa{
     justify-content: space-around;
 }
+.sb{
+    justify-content: space-between;
+}
 .border{
     border: 3px solid var(--color-gold);
 }
@@ -1075,7 +1078,6 @@ main #ouch404 > div p span{
     .d-md-none{
         display: none;
     }
-
     /* NAVBAR */
     #navBar #burger{
         display: block;

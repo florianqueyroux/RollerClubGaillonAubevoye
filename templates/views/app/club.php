@@ -11,50 +11,29 @@
             <div class="sidebar">
                 <h2>Événements</h2>
                 <div class="sidebar-container">
-                    <div class="sidebar-category">
-                        <h3>Réouverture</h3>
-                        <div class="sidebar-items">
-                            <div class="sidebar-item">
-                                <p class="item-title">Réouverture du club prevu le 20/09/2025.</p>
-                                <p class="item-description">nous vous attendons avec impatience</p>
+                    <?php $first = true ?>
+                    <?php foreach ($events as $categorie) :?>
+                        <?php if(empty($categorie)){
+                            continue;
+                        } ?>
+                        <?php if(!$first):?>
+                            <hr>
+                        <?php endif; $first = false?>
+                        <div class="sidebar-category">
+                            <h3><?= $categorie[array_key_first($categorie)]->getCategory()->getName() ?></h3>
+                            <div class="sidebar-items">
+                                <?php foreach ($categorie as $event) :?>
+                                <div class="sidebar-item">
+                                    <div class="d-flex sb">
+                                        <p class="item-title"><?= $event->getTitle() ?></p>
+                                        <p class="item-date"><?= $event->getDate()->format('d/m/Y') ?></p>
+                                    </div>
+                                    <p class="item-description"><?= $event->getDescription() ?></p>
+                                </div>
+                                <?php endforeach ?>
                             </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="sidebar-category">
-                        <h3>Match Senior</h3>
-                        <div class="sidebar-items">
-                            <div class="sidebar-item">
-                                <p class="item-title">1er match à 10h</p>
-                                <p class="item-description">Les vikings affronteront les caribous de Boos</p>
-                            </div>
-                            <div class="sidebar-item">
-                                <p class="item-title">2eme match à 15h</p>
-                                <p class="item-description">Les vikings affronteront les spiders de Rouen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="sidebar-category">
-                        <h3>Sortie Rando</h3>
-                        <div class="sidebar-items">
-                            <div class="sidebar-item">
-                                <p class="item-title">La sortie rando est prevu pour le dimanche 14mai</p>
-                                <p class="item-description">RDV à 10h au parking du gymnase</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="sidebar-category">
-                        <h3>Anniversaire du club</h3>
-                        <div class="sidebar-items">
-                            <div class="sidebar-item">
-                                <p class="item-title">20 ANS ! c'est la fête</p>
-                                <p class="item-description">Venez faire la fête avec nous <br>RDV à 20h à la salle des
-                                    fetes des Douaires</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
 
             </div>
@@ -64,7 +43,7 @@
                 <figure class="icon-cards mt-3">
                     <div class="icon-cards__content">
                         <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <img src="/assets/img/logo/logo-roller-hockey-senior-roller-club-gaillon-aubevoye.webp" alt="">
+                            <img src="/assets/img/logo/logo-roller.webp" alt="Roller">
                         </div>
                         <div class="icon-cards__item d-flex align-items-center justify-content-center">
                             <img src="/assets/img/logo/logo-sr-jr.webp" alt="">
@@ -110,7 +89,7 @@
                 <div class="w-33 p-0-5 w-md-50">
                     <a class="d-block w-100 h-100" href="<?= $router->get('roller') ?>">
                         <figure class="border radius bg w-100 h-100 p-1">
-                            <img src="/assets/img/logo/logo-rcga.webp" alt="">
+                            <img src="/assets/img/logo/logo-roller.webp" alt="roller">
                             <figcaption>Le Roller</figcaption>
                         </figure>
                     </a>
