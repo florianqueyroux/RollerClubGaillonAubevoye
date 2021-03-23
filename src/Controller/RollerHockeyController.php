@@ -20,4 +20,28 @@ class RollerHockeyController extends Controller
     {
         $this->render('app.jeunesse');
     }
+    public function seniorResultat ()
+    {
+        $this->render('app.resultats');
+    }
+    public function juniorResultat ()
+    {
+        $this->render('app.resultats');
+    }
+    public function seniorEffectif ()
+    {
+        $this->render('app.effectif',[
+            'age'=> function ($date){
+                return date_diff(new \DateTime(), new \DateTime($date))->y;
+            }
+        ]);
+    }
+    public function juniorEffectif ()
+    {
+        $this->render('app.effectif',[
+            'age'=> function ($date){
+                return date_diff(new \DateTime(), new \DateTime($date))->y;
+            }
+        ]);
+    }
 }

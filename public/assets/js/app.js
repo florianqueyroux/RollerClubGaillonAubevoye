@@ -10,16 +10,6 @@ if(burger){ // si burger existe
         }
     });
 }
-/* CAROUSEL */
-function classToggle() {
-    var el = document.querySelector('.icon-cards__content');
-    el.classList.toggle('step-animation');
-}
-
-const toggleAnimation = document.querySelector('#toggle-animation');
-if(toggleAnimation){
-    toggleAnimation.addEventListener('click', classToggle);
-}
 
 /*----------------- CAROUSEL ROLLER --------------------*/
 const outer3 = document.getElementById("outer3"); /*Corrige les erreurs sur les autres pages*/

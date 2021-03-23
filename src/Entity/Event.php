@@ -8,18 +8,22 @@ class Event
 {
     private int $id;
     private CategoryEvent $category;
-    private \DateTime $date;
+    private \DateTime $begin;
+    private \DateTime $end;
     private string $title;
     private string $description;
+    private bool $cancel;
     private \DateTime $createdAt;
 
     public function __construct(CategoryEvent $categoryEvent,object $event)
     {
         $this->id = $event->id;
         $this->category = $categoryEvent;
-        $this->date = new \DateTime($event->date_at);
+        $this->begin = new \DateTime($event->begin_at);
+        $this->end = new \DateTime($event->end_at);
         $this->title = $event->title;
         $this->description = $event->description;
+        $this->cancel = $event->cancel == 1;
         $this->createdAt = new \DateTime($event->created_at);
     }
 
@@ -42,9 +46,17 @@ class Event
     /**
      * @return \DateTime
      */
-    public function getDate(): \DateTime
+    public function getBegin(): \DateTime
     {
-        return $this->date;
+        return $this->begin;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getEnd(): \DateTime
+    {
+        return $this->end;
     }
 
     /**
@@ -61,6 +73,14 @@ class Event
     public function getDescription(): string
     {
         return $this->description;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCancel(): bool
+    {
+        return $this->cancel;
     }
 
     /**

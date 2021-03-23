@@ -20,7 +20,8 @@ class EventsModel extends Model
         $results = $this->createQuery('e')
             ->select('e.*','c.id cat_id','c.name cat_name','c.created_at cat_created_at')
             ->join('category_events c','c.id = e.category')
-            ->orderBy('e.date_at', Query::ORDER_BY_DESC)
+            ->orderBy('e.begin_at', Query::ORDER_BY_ASC)
+            ->where('e.end_at > NOW()')
             ->getResults();
         $categories = [];
         $events = [];

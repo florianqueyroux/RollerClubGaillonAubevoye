@@ -7,7 +7,7 @@
         <span><span>A</span>ubevoye</span>
     </h1>
     <div class="d-flex">
-        <div class="w-25 p-1 d-md-none">
+        <div class="w-25 p-1 w-md-100">
             <div class="sidebar">
                 <h2>Événements</h2>
                 <div class="sidebar-container">
@@ -24,9 +24,12 @@
                             <div class="sidebar-items">
                                 <?php foreach ($categorie as $event) :?>
                                 <div class="sidebar-item">
+                                    <?php if($event->isCancel()) :?>
+                                        <img src="/assets/img/logo/cancel.png" alt="Annulé">
+                                    <?php endif ?>
                                     <div class="d-flex sb">
                                         <p class="item-title"><?= $event->getTitle() ?></p>
-                                        <p class="item-date"><?= $event->getDate()->format('d/m/Y') ?></p>
+                                        <p class="item-date"><?= $event->getBegin()->format('d/m/Y') ?></p>
                                     </div>
                                     <p class="item-description"><?= $event->getDescription() ?></p>
                                 </div>
@@ -35,7 +38,6 @@
                         </div>
                     <?php endforeach ?>
                 </div>
-
             </div>
         </div>
         <div class="w-75 p-1 w-md-100">
@@ -46,13 +48,13 @@
                             <img src="/assets/img/logo/logo-roller.webp" alt="Roller">
                         </div>
                         <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <img src="/assets/img/logo/logo-sr-jr.webp" alt="">
+                            <img src="/assets/img/logo/logo-sr-jr.webp" alt="Roller Hockey">
                         </div>
                         <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <img src="/assets/img/logo/logo-cupkidz.webp" alt="">
+                            <img src="/assets/img/logo/logo-cupkidz.webp" alt="Les Valhalla">
                         </div>
                         <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <img src="/assets/img/logo/logo-rcga.webp" alt="">
+                            <img src="/assets/img/logo/logo-rcga.webp" alt="RCGA">
                         </div>
                     </div>
                 </figure>

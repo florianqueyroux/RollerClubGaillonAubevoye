@@ -21,11 +21,11 @@
         "children": {
           "effectif": {
             "path": "/effectif",
-            "controller": "App\\Controller\\RollerHockeyController#effectif"
+            "controller": "App\\Controller\\RollerHockeyController#seniorEffectif"
           },
           "resultat": {
             "path": "/resultat",
-            "controller": "App\\Controller\\RollerHockeyController#resultat"
+            "controller": "App\\Controller\\RollerHockeyController#seniorResultat"
           }
         }
       },
@@ -35,11 +35,11 @@
         "children": {
           "effectif": {
             "path": "/effectif",
-            "controller": "App\\Controller\\RollerHockeyController#effectif"
+            "controller": "App\\Controller\\RollerHockeyController#juniorEffectif"
           },
           "resultat": {
             "path": "/resultat",
-            "controller": "App\\Controller\\RollerHockeyController#resultat"
+            "controller": "App\\Controller\\RollerHockeyController#juniorResultat"
           }
         }
       }
@@ -80,5 +80,22 @@
   "404": {
     "path": "/404",
     "controller": "App\\Controller\\ErrorController#call404"
+  },
+
+
+  "admin": {
+    "path": "/admin",
+    "controller": "App\\Controller\\Admin\\AdminController#admin",
+    "children": {
+      "login": {
+        "path": "/login",
+        "controller": "App\\Controller\\Admin\\AuthenticationController#login"
+      },
+      "logout": {
+        "path" : "/logout",
+        "controller": "App\\Controller\\Admin\\AuthenticationController#logout"
+      }
+    }
   }
+
 }
