@@ -1,3 +1,5 @@
 {
-
+  "kernel.init":{
+   "listener": "App\\Listener\\KernelInitListener#authenticate"
+ }
 }

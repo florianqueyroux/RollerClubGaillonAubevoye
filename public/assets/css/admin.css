@@ -1,0 +1,221 @@
+/*------------------------------ VARIABLE CSS ------------------------------*/
+:root{
+    --color-gold: rgb(156, 128, 83);
+    --color-dark: rgb(35, 35, 36);
+    --color-dark-aside: rgb(56, 56, 59);
+    --color-light: white;
+    --font-main-family: "bigNoodle", sans-serif;
+    --font-main-family-italik:"bigNoodleOblik", sans-serif;
+    --font-main: 400 16px/1.3 var(--font-main-family);
+    --font-main-italik: 400 16px/1.3 var(--font-main-family-italik);
+}
+/*------------------------------ RESET CSS ------------------------------*/
+*:before, *, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* RESET IMG */
+img{
+    display: block;
+    width: 100%;
+}
+/* RESET OTHER */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+input, textarea, select, button{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main-family);
+    outline: none;
+}
+/*------------------------------ CLASS GÉNÉRIQUE ------------------------------*/
+.container{
+    width: 1140px;
+    margin: auto;
+    padding: 0.7rem;
+}
+.container-xl{
+    width: 100%;
+    padding: 0.7rem;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex.no-wrap{
+    flex-wrap: nowrap;
+}
+.d-flex.items-center{
+    align-items: center;
+}
+.w-20{
+    width: 20%;
+}
+.w-25{
+    width: 25%;
+}
+.w-30{
+    width: 30%;
+}
+.w-33{
+    width: 33.333333%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-75{
+    width: 75%;
+}
+.w-80{
+    width: 80%;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.m-1{
+    margin: 1rem;
+}
+.my-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.my-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.p-0-5{
+    padding: .5rem;
+}
+.p-1{
+    padding: 1rem;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.px-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-gold);
+    color: white;
+    border: 1px solid var(--color-gold);
+    border-radius: 0.7rem;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--color-gold);
+}
+.text-center{
+    text-align: center;
+}
+.d-block{
+    display: block;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.bg{
+    background-color: var(--color-dark);
+}
+.sa{
+    justify-content: space-around;
+}
+.sb{
+    justify-content: space-between;
+}
+.ac{
+    align-items: center;
+}
+.border{
+    border: 3px solid var(--color-gold);
+}
+.radius{
+    border-radius: 40px;
+}
+/* Form */
+.form-group{
+    display: block;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+.form-group .form-label{
+    display: block;
+    width: 100%;
+    color: var(--color-gold);
+    font-family: var(--font-main-family-italik);
+    font-size: 1.5rem;
+}
+.form-group .form-input{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-gold);
+    border-radius: .7rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+.form-group .form-error{
+    color: red;
+}
+.form-group .form-error ~ .form-input{
+    border: 1px solid red;
+}
+/*------------------------------ BODY ------------------------------*/
+body{
+    background-image: url("../img/logo/viking.webp");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: var(--font-main);
+    color: var(--color-light);
+}
+/*------------------------------ NAV ------------------------------*/
+.aside{
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--color-dark);
+    min-height: 100vh;
+    color: var(--color-light);
+    border-right: 3px solid var(--color-gold);
+}
+header .nav-items{
+    margin-top: 2rem;
+}
+header .nav-items .nav-item{
+    padding: 1rem;
+    font-size: 2rem;
+    display: block;
+}
+header .nav-items .nav-item:hover{
+    background-color: var(--color-gold);
+
+}

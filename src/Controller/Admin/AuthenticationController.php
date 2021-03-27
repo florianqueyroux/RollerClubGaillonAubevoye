@@ -29,7 +29,8 @@ class AuthenticationController extends AdminController
         if($form->isSubmit() && $form->isValid()){
             $user = (new UsersModel())->getUserByEmail($form->get('email'));
             if($user !== NULL && password_verify($form->get('password'), $user->getPassword())){
-                /* CONNECTION DE L'UTILISATEUR */
+                $this->connect($user);
+                $this->redirect('admin');
             }
             $error = 'Identifiant invalide';
         }
@@ -41,6 +42,7 @@ class AuthenticationController extends AdminController
 
     public function logout()
     {
-
+        $this->disconnect();
+        $this->redirect('home');
     }
 }
