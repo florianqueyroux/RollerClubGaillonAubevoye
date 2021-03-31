@@ -95,7 +95,27 @@
       },
       "events": {
         "path": "/events",
-        "controller": "App\\Controller\\Admin\\EventsController#events"
+        "controller": "App\\Controller\\Admin\\EventsController#events",
+        "children": {
+          "new": {
+            "path": "/new",
+            "controller": "App\\Controller\\Admin\\EventsController#new"
+          },
+          "edit": {
+            "path": "/{id}",
+            "controller": "App\\Controller\\Admin\\EventsController#edit",
+            "params": {
+              "id": "/^[0-9]+$/"
+            },
+            "children": {
+              "cancel": {
+                "path": "/cancel",
+                "controller": "App\\Controller\\Admin\\EventsController#cancel",
+                "methods": ["POST"]
+              }
+            }
+          }
+        }
       },
       "results": {
         "path": "/results",

@@ -27,7 +27,7 @@ class TextAreaElement extends \NeutronStars\Form\TextAreaElement
     public function validate(): void
     {
         if (empty($this->value) && ($this->filters['required'] ?? true)) {
-            $this->error = 'Ce champ est requis.';
+            $this->error = 'Champ obligatoire';
             return;
         }
         if(!empty($this->value)) {

@@ -84,6 +84,9 @@ input, textarea, select, button{
 .w-100{
     width: 100%;
 }
+.w-auto{
+    width: auto;
+}
 .h-100{
     height: 100%;
 }
@@ -122,6 +125,12 @@ input, textarea, select, button{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.p-relatif{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
 .btn{
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -129,6 +138,7 @@ input, textarea, select, button{
     color: white;
     border: 1px solid var(--color-gold);
     border-radius: 0.7rem;
+    font-size: 1.2rem;
 }
 .btn:hover{
     background-color: transparent;
@@ -189,6 +199,22 @@ h1{
 .form-group .form-error ~ .form-input{
     border: 1px solid red;
 }
+/* FLASH */
+.alert{
+    padding: 1rem;
+    border-radius: .7rem;
+    color: white;
+    margin: .5rem 0;
+}
+.alert.alert-success{
+    background-color: #55b702;
+}
+.alert.alert-error{
+    background-color: #ff0000;
+}
+.alert.alert-warning{
+    background-color: #bf9604;
+}
 /*------------------------------ BODY ------------------------------*/
 body{
     background-image: url("../img/logo/viking.webp");
@@ -218,4 +244,23 @@ header .nav-items .nav-item{
 header .nav-items .nav-item:hover{
     background-color: var(--color-gold);
 
+}
+/*------------------------------ ÉVÉNEMENTS ------------------------------*/
+main h3{
+    text-align: center;
+    color: var(--color-gold);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+main h4{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+main .btn-items{
+    margin-top: 2rem;
+    text-align: center;
+}
+main .btn-items form{
+    display: inline;
 }
