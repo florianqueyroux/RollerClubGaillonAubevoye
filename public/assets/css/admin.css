@@ -31,6 +31,11 @@ input, textarea, select, button{
     font-family: var(--font-main-family);
     outline: none;
 }
+hr{
+    border: 0;
+    border-top: 2px dashed var(--color-gold);
+    margin: 0.5rem 1rem;
+}
 /*------------------------------ CLASS GÉNÉRIQUE ------------------------------*/
 .container{
     width: 1140px;
@@ -236,9 +241,14 @@ body{
 header .nav-items{
     margin-top: 2rem;
 }
+header .nav-items > h2{
+    font-size: 2rem;
+    color: var(--color-gold);
+    margin-left: .3rem;
+}
 header .nav-items .nav-item{
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     display: block;
 }
 header .nav-items .nav-item:hover{
@@ -264,3 +274,6 @@ main .btn-items{
 main .btn-items form{
     display: inline;
 }
+
+
+/*------------------------------ RESPONSIVE MEDIA QUERY ------------------------------*/

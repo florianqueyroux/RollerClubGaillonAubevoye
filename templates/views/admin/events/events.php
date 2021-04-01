@@ -9,13 +9,16 @@
 
     <a class="btn" href="<?= $router->get('admin.events.new') ?>">Ajouter un événement</a>
     <div class="d-flex">
+
         <?php foreach ($events as $event): ?>
             <div class="p-1 w-33">
                 <div class="bg border radius p-2 h-100">
                     <div class="p-relatif">
-                        <?php if($event->isCancel()) :?>
+
+                        <?php if($event->isCancel()) :?> // Si l'event est annulé alors l'image apparait
                             <img class="p-absolute h-100 w-auto" src="/assets/img/logo/cancel.png" alt="Annulé">
                         <?php endif ?>
+
                         <h3><?= $event->getCategory()->getName() ?></h3>
                         <h4><?= $event->getTitle() ?></h4>
                         <p><?= $event->getDescription() ?></p>
@@ -36,5 +39,6 @@
                 </div>
             </div>
         <?php endforeach ?>
+
     </div>
 </main>

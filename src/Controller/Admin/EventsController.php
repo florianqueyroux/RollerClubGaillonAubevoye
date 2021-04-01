@@ -64,10 +64,12 @@ class EventsController extends AdminController
     {
         $eventModel = new EventsModel();
         $event = $eventModel->getEvent($id);
+
         if($event === NULL){
             $this->addFlash('error', 'Aucun événement');
             $this->redirect('admin.events');
         }
+
         $form = (new \App\Form\Form($_POST, [
             'category'=>$event->getCategory()->getId(),
             'title'=>$event->getTitle(),
@@ -114,10 +116,12 @@ class EventsController extends AdminController
     {
         $eventModel = new EventsModel();
         $event = $eventModel->getEvent($id);
+
         if ($event === NULL) {
             $this->addFlash('error', 'Aucun événement 1');
             $this->redirect('admin.events');
         }
+
         $form = (new \App\Form\Form($_POST))
             ->add(new CheckBoxElement('Annuler', 'cancel'));
 

@@ -5,10 +5,10 @@
         <div class="w-50 p-1 w-sm-100">
             <div class="warrior d-flex bg p-2 px-sm-1">
                 <img class="w-100 p-1"
-                     src="/assets/img/logo/logo-roller-hockey-jeunesse-roller-club-gaillon-aubevoye.webp"
+                     src="/assets/img/logo/logo-roller-hockey-senior-roller-club-gaillon-aubevoye.webp"
                      alt="Vikings Senior">
                 <div class="w-100 p-1">
-                    <h2>L'equipe Jeunesse</h2>
+                    <h2>L'equipe Senior</h2>
                 </div>
                 <div class="d-flex w-100 sa">
                     <div class="detail-team w-50">
@@ -23,10 +23,10 @@
         <div class="w-50 p-1 w-sm-100">
             <div class="warrior d-flex bg p-2 px-sm-1">
                 <img class="w-100 p-1"
-                     src="/assets/img/logo/logo-roller-hockey-senior-roller-club-gaillon-aubevoye.webp"
+                     src="/assets/img/logo/logo-roller-hockey-jeunesse-roller-club-gaillon-aubevoye.webp"
                      alt="Vikings Senior">
                 <div class="w-100 p-1">
-                    <h2>L'equipe Senior</h2>
+                    <h2>L'equipe Jeunesse</h2>
                 </div>
                 <div class="d-flex w-100 sa">
                     <div class="detail-team w-50">

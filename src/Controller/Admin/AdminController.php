@@ -13,7 +13,7 @@ class AdminController extends Controller
 {
     public function __construct(bool $check = true)
     {
-        /*(new UsersModel())->insert();*/
+        /*(new UsersModel())->insert();*/ // Ajout d'un admin sans formulaire UserModel ligne 55
         if($check && !$this->isConnected()){
             $this->redirect('admin.login');
         }
